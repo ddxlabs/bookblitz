@@ -24,7 +24,7 @@ You will not need to modify:
 
 Accuracy is just as important as speed. Use the test suite to check the state of your book. You can add your own tests to the `test/` directory, and they'll be automatically picked up when you rebuild the project. A default starter file has already been included for you.
 
-Once your implementation is correct, you can use `python -m tools.run` or `python -m tools.run --no-plot` to benchmark it.
+Once your implementation is correct, you can use `python -m tools.bench run` or `python -m tools.bench run --no-plot` to benchmark it.
 
 ---
 
@@ -50,13 +50,13 @@ cmake --build build
 To benchmark your implementation, run:
 
 ```bash
-python -m tools.run
+python -m tools.bench run
 ```
 
 This profiles your order book **against a real trading day of events** and reports nanosecond per-event latencies. To suppress the plot output (which might make repeated runs easier), pass the `--no-plot` flag:
 
 ```bash
-python -m tools.run --no-plot
+python -m tools.bench run --no-plot
 ```
 
 ### Testing
